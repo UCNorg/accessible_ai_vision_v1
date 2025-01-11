@@ -1,0 +1,68 @@
+.app-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      cursor: pointer;
+    }
+
+    .chat-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      min-height: 300px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 3px solid var(--primary-color);
+    }
+
+    .timestamp {
+      display: block;
+      font-size: 0.8em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .error {
+      color: var(--error-color);
+      margin-top: 10px;
+    }
+
+    .high-contrast button {
+      background-color: var(--contrast-text);
+      color: var(--contrast-background);
+    }
+
+    .message-controls {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .message-controls button {
+      padding: 5px 10px;
+      font-size: 1.2em;
+      background-color: transparent;
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+
+    .message-controls button:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }

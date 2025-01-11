@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #ffffff;
+  --background-color: #f8f9fa;
+  --text-color: #202124;
+  --error-color: #d93025;
+  --success-color: #34a853;
+  --contrast-background: #000000;
+  --contrast-text: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1557b3;
+}
+
+.chat-container {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 3px solid var(--primary-color);
+  background-color: #f1f3f4;
+  border-radius: var(--border-radius);
+}
+
+.timestamp {
+  display: block;
+  font-size: 0.8em;
+  color: #5f6368;
+  margin-bottom: 5px;
+}
+
+.message-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.message-controls button {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+.message-controls button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.error {
+  color: var(--error-color);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.high-contrast {
+  background-color: var(--contrast-background) !important;
+  color: var(--contrast-text) !important;
+}
+
+.high-contrast button {
+  background-color: var(--contrast-text);
+  color: var(--contrast-background);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

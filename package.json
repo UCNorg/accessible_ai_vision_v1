@@ -1,0 +1,25 @@
+{
+  "name": "accessible-ai-vision",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "compressorjs": "^1.1.1",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-error-boundary": "^4.0.11",
+    "react-speech-kit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.14.0",
+    "@types/react-dom": "^16.9.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.5.5"
+  }
+}
